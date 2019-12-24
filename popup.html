@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>AEM Navigator</title>
+      <link rel="stylesheet" href="bootstrap.min.css">
+      <link rel="stylesheet" href="popup.css">
+      <script src='jquery.min.js'></script>
+      
+   </head>
+   <body>
+      <div class="modal-header">
+         <h1 class="logo">
+            <img class="logo-icon" src="icon.png" />AEM Navigator (Touch UI)
+         </h1>
+      </div>
+      <div class="modal-icons">
+         <span class="heading"> WCM MODES(Open Page In)</span>
+         <div class="flex-container">
+            <div class="flex">
+               <a id="disabled-mode" href="#" class="btn btn-primary" role="button">Disabled Mode</a>
+            </div>
+            <div class="flex">
+               <a id="edit-mode" href="#" class="btn btn-primary" role="button">Edit Mode</a>
+            </div>
+            <div class="flex">
+               <a id="page-properties" href="#" class="btn btn-primary" role="button">Page Properties</a>
+            </div>
+            <div class="flex">
+               <a id="in-crx-de" href="#" class="btn btn-primary" role="button">CRXDE</a>
+            </div>
+         </div>
+         <span class="heading"> Consoles</span>
+         <div class="flex-container">
+            <div class="flex">
+               <a id="welcome" href="/aem/start.html" class="btn btn-primary generic-func" role="button">Welcome</a>
+            </div>
+            <div class="flex">
+               <a id="crx-de" href="/crx/de/index.jsp#" class="btn btn-primary generic-func" role="button">CRXDE</a>
+            </div>
+            <div class="flex">
+               <a id="package" href="/crx/packmgr/index.jsp" class="btn btn-primary generic-func" role="button">Packages</a>
+            </div>
+         </div>
+         <span class="heading"> DAM & Sites</span>
+         <div class="flex-container">
+            <div class="flex">
+               <a id="damadmin" href="/assets.html/content/dam" class="btn btn-primary generic-func" role="button">Assets</a>
+            </div>
+            <div class="flex">
+               <a id="siteadmin" href="/sites.html/content" class="btn btn-primary generic-func" role="button">Sites</a>
+            </div>
+            <div class="flex">
+               <a id="templates" href="/libs/wcm/core/content/sites/templates.html/conf" class="btn btn-primary generic-func" role="button">Templates</a>
+            </div>
+         </div>
+         <span class="heading"> Felix Console</span>
+         <div class="flex-container">
+            <div class="flex">
+               <a id="Bundles" href="/system/console/bundles" class="btn btn-primary generic-func" role="button">Bundles</a>
+            </div>
+            <div class="flex">
+               <a id="Configuration" href="/system/console/configMgr" class="btn btn-primary generic-func" role="button">Configuration</a>
+            </div>
+            <div class="flex">
+               <a id="aem-logs" href="/system/console/status-slinglogs"class="btn btn-primary generic-func" role="button" >AEM Logs</a>
+            </div>
+         </div>
+         <span class="heading"> Miscellaneous</span>
+         <div class="flex-container">
+            <div class="flex">
+               <a id="debug-clientlibs" href="#" class="btn btn-primary" role="button">Debug Clienlibs</a>
+            </div>
+            <div class="flex">
+               <a id="Configuration" href="/libs/cq/search/content/querydebug.html" class="btn btn-primary generic-func" role="button">QueryBuilder</a>
+            </div>
+            <div class="flex">
+               <a id="workflow" href="/libs/cq/workflow/admin/console/content/models.html" class="btn btn-primary generic-func generic-func" role="button" >Workflows</a>
+            </div>
+         </div>
+         <div class="flex-container">
+            <div class="flex">
+               <a id="useradmin" href="/useradmin" class="btn btn-primary generic-func" role="button" >User Manager</a>
+            </div>
+            <div class="flex">
+               <a id="miscadmin" href="/miscadmin" class="btn btn-primary generic-func" role="button" >Miscadmin</a>
+            </div>
+            <div class="flex">
+               <a id="tagadmin" href="/aem/tags" class="btn btn-primary generic-func" role="button" >Tags</a>
+            </div>
+         </div>
+		
+         <label class="switch">
+         <input id="baction" type="checkbox" />
+         <span class="slider round"></span>
+         </label>
+		  Open links in new tab.
+         <a href="https://howtoaem.blogspot.com/2019/10/aem-navigator-chrome-extension-aem_24.html" target="_blank">
+         <img class="img-responsive pull-right" src="info.png" />
+         </a>
+      </div>
+      <script src="popup.js"></script>
+   </body>
+</html>
